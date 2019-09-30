@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoYouLoveMe</title>
+</head>
+<body>
+<h2 style="position: absolute;left: 200px;top: 200px">Do You Love Me?</h2>
+<input type="button" value="Yes" style="position: absolute;top: 260px; left: 220px" onclick="clickyes()">
+<input id="idno" type="button" value="No" style="position: absolute;top: 260px; left: 300px" onmouseover="onmouse()">
+<script>
+
+    function onmouse() {
+        let a = Math.round(Math.random() * window.innerWidth);
+        let b = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('idno').style.top = b + 'px';
+        document.getElementById('idno').style.left = a + 'px';
+    }
+    function clickyes() {
+        alert('Bạn đúng!!!')
+    }
+</script>
+</body>
+</html>
